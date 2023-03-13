@@ -1,0 +1,47 @@
+.header {
+  background: 50%/contain url(/public/images/background.png) #02021e;;
+
+  .header-logo {
+    .logo-image {
+      display: block;
+      height: max(38px, 2rem);
+    }
+
+    .logo-text {
+      height: max(15px, .76rem);
+      margin-left: max(13px, 1.1rem);
+    }
+  }
+
+  .nav-bar {
+    .nav-button {
+      position: relative;
+      width: fit-content;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+      &:hover {
+        a {
+          color: white;
+        }
+
+        &:before {
+          width: 100%;
+          content: '';
+          height: 3px;
+          background: white;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        bottom: -5px;
+        display: inline-block;
+        content: '';
+        width: 0;
+        height: 3px;
+        background: white;
+        transition: width 0.3s ease-in-out;
+      }
+    }
+  }
+}
